@@ -52,6 +52,40 @@ Desenvolvi uma nova funcionalidade e vou lançar a versão 2.0, o container junt
 
 E esse conceito serve também com o container aproveitando as dependências que já existe no sistema operacional, assim ele só tem os pedaços que ele precisa para funcionar, deixando o container leve.
 
+## Imagens
+
+Uma imagem é um conjunto de dependências encadeadas numa espécie de arvore, assim contendo sua camadas.
+
+As imagens são armazenadas dentro do **Image Registry**.
+
+#### DOCKERFILE
+
+Uma das formas de criação de imagem, é o arquivo de definição da imagem, normalmente criamos o arquivo **DockerFile** onde será escrita uma declaração de como a imagem será construída.
+
+Sempre a imagem principal será uma imagem em branco, mas nunca vamos partir de uma imagem em branco, sempre pegamos uma imagem existente. Para partimos da image utilizamos uma linha no DockerFile chamada:
+
+> FROM: image name
+
+E é possível rodar alguns comando através do:
+
+> RUN: Comandos exemplos `apt-get install`
+
+E caso queira expor uma porta é:
+
+> EXPOSE: 8000
+
+Então o **Dockerfile** é um arquivo declarativo para construir uma imagem.
+
+#### ESTADO
+
+O estado da imagem é imutável, porém o docker cria uma camada de **Read/Write** assim é possível fazer alterações no comportamento do container.
+
+A camada de escrita não altera a imagem, caso exclua o container o que mudou na camada de **Read/Write** será perdido.
+
+Toda vez que um dockerFile é rodado é gerado uma nova imagem (um novo build).
+
+É possível também após escrever na camada **Read/Write** realizar um commit e assim será gerado uma nova imagem na sua próxima versão.
+
 ---
 
 In progress...
