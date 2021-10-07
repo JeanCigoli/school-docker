@@ -76,7 +76,7 @@ E caso queira expor uma porta é:
 
 Então o **Dockerfile** é um arquivo declarativo para construir uma imagem.
 
-#### ESTADO
+#### STATE
 
 O estado da imagem é imutável, porém o docker cria uma camada de **Read/Write** assim é possível fazer alterações no comportamento do container.
 
