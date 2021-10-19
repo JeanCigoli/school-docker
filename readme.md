@@ -87,5 +87,3 @@ Toda vez que um dockerFile é rodado é gerado uma nova imagem (um novo build).
 É possível também após escrever na camada **Read/Write** realizar um commit e assim será gerado uma nova imagem na sua próxima versão.
 
 ---
-
-In progress...
