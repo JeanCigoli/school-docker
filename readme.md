@@ -18,7 +18,7 @@ Os containers são processos, onde por meio de namespaces eles conseguem ficar i
 
 Os processos só enxergam aquilo que está dentro dele, não visualiza nada fora do seu namespace.
 
-![Namespace](docs/img/namespace.png)
+![Namespace](files/img/namespace.png)
 
 Cada processo pode ter:
 
@@ -44,11 +44,11 @@ Essa funcionalidade referencia o reaproveitamento de arquivos que já existem, e
 
 Tenho um aplicação que possui duas dependências, atualmente ela está na versão 1.0
 
-![Overlay 1](docs/img/overlay1.png)
+![Overlay 1](files/img/overlay1.png)
 
 Desenvolvi uma nova funcionalidade e vou lançar a versão 2.0, o container junto com o overlay file system consegue realizar o reaproveitamento das dependências e atualizar apenas o que precisa. A segunda imagem só será gerada com o diferença das duas imagens.
 
-![Overlay 1](docs/img/overlay2.png)
+![Overlay 1](files/img/overlay2.png)
 
 E esse conceito serve também com o container aproveitando as dependências que já existe no sistema operacional, assim ele só tem os pedaços que ele precisa para funcionar, deixando o container leve.
 
