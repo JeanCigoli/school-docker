@@ -64,6 +64,12 @@ Com esses dois comandos é possível manter um base do ubuntu ativo, e executar 
   "$(pwd)" = indica a pasta atual que estou na máquina.
 ```
 
+
+- **Docker volume ls**: Lista os volumes criados no pc para dentro do docker.
+
+ **Docker volume create < meuvolume >**: Cria um volume novo.
+
+
 - **Docker images**: Lista as imagens que tenho instaladas no pc.
 
 ![Docker images](../files/img/docker/12.png)
