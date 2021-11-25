@@ -1,0 +1,14 @@
+{
+  "name": "full-cycle-node",
+  "version": "1.0.0",
+  "description": "Api criada para estudo de node com docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jean Cigoli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
