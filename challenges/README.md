@@ -21,4 +21,8 @@ E podemos dizer que o desafio foi cumprido:
 
 ![Container docker](../files/img/docker/challenge1.png)
 
+Ao executar temos:
+
+![Running docker](../files/img/docker/challenge1.1.png)
+
 O **Dockerfile** se encontra dentro da pasta ./go.
